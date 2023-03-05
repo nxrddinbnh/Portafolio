@@ -1,0 +1,250 @@
+*{
+	font-family: Lato;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  	cursor: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+body{
+	background: url("../../Archivos/Fondos/Fondo-0.jpg") no-repeat  ;
+	background-size: cover;
+	min-height: 100vh;
+}
+html{
+	scroll-behavior: smooth;
+}
+#linea-web{
+	position: fixed;
+	width: 4px;
+	height: 100%;
+	background: linear-gradient(180deg, #7179b8, #49fa70);
+}
+
+/*------------------ TEXTO INTRODUCCION ------------------*/
+
+#introduccion{
+	display: grid;
+	grid-template-columns: 47% 0%;
+	gap: 6%;
+	margin-top: ;
+}
+#texto-boton{
+	transform: translate(0, -50%);
+	margin-top: 50%;
+	margin-left: 110px;
+	font-size: 30px;
+	color: white;
+}	
+#texto-boton h1{
+	font-size: 76pt;
+}
+#texto-boton p{
+	font-size: 22pt;
+}
+#nombre{
+	background: linear-gradient(90deg,#0dac9d,#00f965);
+  	-webkit-background-clip: text;
+  	color: transparent;  
+}
+#apellido{
+	background: linear-gradient(90deg,#6e79ba,#00b496);
+  	-webkit-background-clip: text;
+  	color: transparent;
+}
+#imagen-pantalla img{
+	height: 45em;
+	width: auto;
+	margin-top: 6em;
+}
+/*------------------ BOTON CV Y TALK ------------------*/
+
+#botones{
+	margin-top: 2em;
+	transition: all 0.2s ease-in-out;
+}
+.btn{
+	text-decoration: underline;
+}
+.btn:hover{
+	-webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.7) 30%, #000 50%, rgba(0,0,0,.7) 70%);
+	-webkit-mask-size: 200%;
+	animation: shine 1.2s infinite;
+}
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+#cv{
+	font-weight: 600;
+	font-size: 15pt;
+	color:#505785;
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left:25px;
+	padding-right:25px;
+	background-color: transparent;
+	border: 2px solid #505785;
+	margin-right: 10px;
+	border-radius:5px;
+}
+#talk{
+	font-weight: 600;
+	font-size: 15pt;
+	color:black;
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left:15px;
+	padding-right:15px;
+	background-color: #505785;
+	border: 2px solid #505785;
+	border-radius:5px;
+}
+
+/*------------------ CURSOR ------------------*/
+.cursor {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid #535882;
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
+}
+.cursor2 {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #535882;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width .3s, height .3s, opacity .3s;
+}
+.cursorinnerhover {
+  width: 50px;
+  height: 50px;
+  opacity: .5;
+}
+
+/*--------------------- PARA PAGINA ABOUT ---------------------*/
+/*--------------------- PARA PAGINA ABOUT ---------------------*/
+#about{
+	position: relative !important;
+	margin-top: 23em;
+}
+#menos-titulo{
+	display: grid;
+	grid-template-columns: 35% 40%;
+	gap: 15%;
+	margin: 0px 110px 0px 110px;
+}
+#vector-persona img{
+	width: 22em;
+	height: auto;
+}
+#titulo-about h1{
+	margin-top: 100px;
+  background: linear-gradient(to right, #7179b8 47%, #49fa70 53%);
+  color: transparent;
+  -webkit-background-clip: text;
+  text-align: center;
+}
+#titulo-about p{
+  color: #50555d;
+  margin-bottom: 60px; 
+  text-align: center;
+}
+.info-cuad{
+	display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+#bloque-about{
+	
+}
+.info-cuad h3{
+ 	color: white;
+ 	font-size: 12pt;
+}
+.info-cuad p{
+ 	color: #50555d;
+ 	font-weight: regular;
+ 	font-size: 10pt;
+ 	margin-top: 3px;
+}
+.info-cuad i{
+	font-size: 18pt;
+ 	background: linear-gradient(90deg, #7179b8 20%, #49fa70 80%);
+ 	color: transparent;
+ 	-webkit-background-clip: text;
+}
+#icua{
+	transition: 0.5s;
+	background: rgba(83, 88, 130, 0.11);
+	border: 1px solid transparent;
+	backdrop-filter: blur(10px);
+	border-radius: 1rem;
+	padding: 2rem;
+	text-align: center;
+}
+
+#icua:hover{
+	transition: 0.5s;
+	background: transparent;
+	border: 1px solid #2f3142;
+}
+#texto-about{
+	margin-top: 60px;
+	font-size: 10pt;
+	font-weight: 400;
+	color: white;
+	text-align: left;
+}
+
+/*--------------------- BOTON ---------------------*/
+#boton-talk{
+	font-weight: 600;
+	font-size: 13.5px;
+	width: max-content;
+	padding: 1rem 1.2rem;
+	border-radius: 0.4rem;
+	border: 1px solid transparent;
+	background-color: #505785;
+	margin-top: 20px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+#boton-talk:hover{
+	border-color: #505785;
+	background: transparent;
+	transition: 0.5s;
+	color: #505785;
+}
+
+/*------------------ PIE DE PAGINA ------------------*/
+#creditos{
+	padding: 1.5em 1.8em;
+	margin-top: 5em;
+	margin-bottom: 2em;
+	text-align: center;
+	text-
+	position: absolute;
+	bottom: 0;
+	bottom: -1px;
+	height: 40px
+}
+#creditos{
+	color: #2d3045;
+}
